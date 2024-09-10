@@ -1,5 +1,14 @@
 <h1 align="center">Customizable Authentication Solution with Prisma & Postgres</h1>
 
+## 🧾<a href="easy-access-contents">Easy Access Contents</a>
+
+1. 🙋‍♂️[Introduction](#introduction)
+2. 🤩[Quick Start](#quick-start)
+3. ⚙️[Techologies Used](#techologies-used)
+4. ⭐[Features](#features)
+5. 🛠️[Customization](#customization)
+6. 🎊[Moral of Story](#moral-of-story)
+
 ## 🙋‍♂️<a href="introduction">Introduction</a>
 
 **Overview**
