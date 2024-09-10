@@ -1,5 +1,7 @@
 <h1 align="center">Customizable Authentication Solution with Prisma & Postgres</h1>
 
+https://github.com/ManishZ007/easy-authentication-prisma-postgres/blob/main/demo/Screenshot%202024-09-06%20011459.png
+
 ## 🧾<a href="easy-access-contents">Easy Access Contents</a>
 
 1. 🙋‍♂️[Introduction](#introduction)
