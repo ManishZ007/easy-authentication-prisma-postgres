@@ -30,10 +30,14 @@ cd easy-authentication-prisma-postgres
 npm install
 ```
 2. Update the .env file with your Postgres DATABASE_URL:
+
+  if there is not .env file then create one .env file in root
 ```bash
 DATABASE_URL="postgresql://<database>:<password>@localhost:5432/<collection>"
 ```
 3. Update the .env.local file with your Google OAuth, and GitHub OAuth credentials:
+
+  if there is not .env file then create one .env file in root
 ```bash
 AUTH_SECRET='this automaticaly generate': https://cli.authjs.dev
 
