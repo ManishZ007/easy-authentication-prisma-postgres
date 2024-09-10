@@ -1,15 +1,20 @@
 <h1 align="center">Customizable Authentication Solution with Prisma & Postgres</h1>
 
-https://github.com/ManishZ007/easy-authentication-prisma-postgres/blob/main/demo/Screenshot%202024-09-06%20011459.png
+## 🖼️<a href="demo-project-img">Demo of Project</a>
+
+![alt text](https://github.com/ManishZ007/easy-authentication-prisma-postgres/blob/main/demo/Screenshot%202024-09-06%20011459.png)
+
+
 
 ## 🧾<a href="easy-access-contents">Easy Access Contents</a>
 
-1. 🙋‍♂️[Introduction](#introduction)
-2. 🤩[Quick Start](#quick-start)
-3. ⚙️[Techologies Used](#techologies-used)
-4. ⭐[Features](#features)
-5. 🛠️[Customization](#customization)
-6. 🎊[Moral of Story](#moral-of-story)
+1. 🖼️[Demo Project](#demo-project-img)
+2. 🙋‍♂️[Introduction](#introduction)
+3. 🤩[Quick Start](#quick-start)
+4. ⚙️[Techologies Used](#techologies-used)
+5. ⭐[Features](#features)
+6. 🛠️[Customization](#customization)
+7. 🎊[Moral of Story](#moral-of-story)
 
 ## 🙋‍♂️<a href="introduction">Introduction</a>
 
