@@ -12,10 +12,10 @@ declare interface User {
 }
 
 declare interface CreateUserProps {
-  username?: string;
-  email?: string;
-  firstname?: string;
-  lastname?: string;
+  username: string;
+  email: string;
+  firstname: string;
+  lastname: string;
   password?: string;
   provider?: string;
   oauth_id?: string;

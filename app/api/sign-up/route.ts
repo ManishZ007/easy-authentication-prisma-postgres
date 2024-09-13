@@ -16,6 +16,8 @@ export async function POST(request: Request) {
       lastname,
     };
 
+    console.log(user);
+
     const newUser = await createUser(user);
 
     if (!newUser) {

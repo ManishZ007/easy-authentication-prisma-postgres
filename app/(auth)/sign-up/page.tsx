@@ -67,8 +67,8 @@ const SignIn = () => {
 
   const onSubmit = async (data: TSignUpSchema) => {
     const res = await axios.post<ApiResponse>("/api/sign-up", {
-      firstName: data.firstname,
-      lastName: data.lastname,
+      firstname: data.firstname,
+      lastname: data.lastname,
       username: data.username,
       email: data.email,
       password: data.password,

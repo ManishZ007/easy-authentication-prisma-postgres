@@ -2,7 +2,7 @@ import { NextAuthOptions } from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { createUser, loginUser } from "@/lib/database/user.actions";
+import { createUser, getUser, loginUser } from "@/lib/database/user.actions";
 
 export const authOptions: NextAuthOptions = {
   providers: [
@@ -83,25 +83,21 @@ export const authOptions: NextAuthOptions = {
       return true;
     },
 
-    async jwt({ token, user, session, trigger, account }) {
+    async jwt({ token, user, session, trigger }) {
       if (trigger === "update") {
         return { ...token, ...session };
       }
 
       if (user) {
-        if (account?.provider == "google" || account?.provider == "github") {
-          token.id = user.id?.toString();
-          token.username = user.name?.split(" ").join("");
-          token.email = user.email;
-          token.firstname = user.name?.split(" ")[0];
-          token.lastname = user.name?.split(" ")[1];
-        }
-        token.id = user.id?.toString();
-        token.username = user.username;
-        token.email = user.email;
-        token.firstname = user.firstname;
-        token.lastname = user.lastname;
+        const findByEmail = await getUser(user.email as string);
+
+        token.id = findByEmail.data.id;
+        token.username = findByEmail.data.username;
+        token.email = findByEmail.data.email;
+        token.firstname = findByEmail.data.firstname;
+        token.lastname = findByEmail.data.lastname;
       }
+
       return token;
     },
 
